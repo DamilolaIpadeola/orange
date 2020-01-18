@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.canvasjs-chart-credit {
+    color: #69696900 !important;
+}
