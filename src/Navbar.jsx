@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Navbar = () => (
-  <nav className="flex items-center justify-between flex-wrap bg-white py-4 px-6 shadow-md">
+  <nav className="flex items-center justify-between flex-wrap bg-white py-4 px-6 shadow-md items-center">
     <div className="w-full flex-grow flex items-center w-auto">
       <div className="text-sm lg:flex-grow">
         <div className="relative">
@@ -9,10 +9,10 @@ const Navbar = () => (
           <i className="fa fa-search absolute top-0 left-0 py-3 text-gray-500" aria-hidden="true"></i>
         </div>
       </div>
-      <div>
-        <a href="#" className="inline-block text-sm text-gray-700 mt-4 lg:mt-0 mr-4">My Investment</a>
-        <i className="fa fa-bell text-gray-700 mr-4" aria-hidden="true"></i>
-        <a href="#" className="inline-block text-sm text-gray-700 mt-4 lg:mt-0">Logout</a>
+      <div className="flex">
+        <a href="#" className="inline-block text-sm text-gray-700 mt-4 lg:mt-0 mr-4 hidden lg:block">My Investment</a>
+        <div className="hidden lg:block"><i className="fa fa-bell text-gray-700 mr-4" aria-hidden="true"></i></div>
+        <a href="#" className="inline-block text-sm text-gray-700 lg:mt-0">Logout</a>
       </div>
     </div>
   </nav>
